@@ -1,7 +1,7 @@
 import firebase from 'firebase' //this is importing from node modules
 
 //paste firebase config here
-const firebaseApp = firebase.initializeApp( {
+const firebaseApp = firebase.initializeApp({
     apiKey: "AIzaSyDj0X7apT9T2nT667oAMWh9xottUXU4VW8",
     authDomain: "clone-d2171.firebaseapp.com",
     projectId: "clone-d2171",
@@ -15,6 +15,6 @@ const firebaseApp = firebase.initializeApp( {
   const auth = firebase.auth();
   const provider = new firebase.auth.GoogleAuthProvider()
 
-  export { db, provider } 
+  export { db, auth, provider };
 
 

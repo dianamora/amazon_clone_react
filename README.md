@@ -1,3 +1,12 @@
+AMAZON CLONE
+Welcome to my React project! For my project I worked on creating a basic clone of the Amazon website.
+
+    The motivation behind this project was the drive to build something that had real-world value. A lot of labs during the React phase and project build videos focused on single page applications like "to-do" lists. I wanted to work on something that would be a challenge and also show me how to work with React in a more realistic way.
+
+    I utilized an external database (Firebase), and instead of created separate CSS files for each component, I used styled-components which allows you to style the components in their files.
+
+    Feel free to browse and add items to the cart! You can create an account and log-in as well.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

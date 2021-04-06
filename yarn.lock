@@ -9893,10 +9893,10 @@
   "resolved" "https://registry.npmjs.org/neo-async/-/neo-async-2.6.2.tgz"
   "version" "2.6.2"
 
-"netmask@^1.0.6":
-  "integrity" "sha1-ICl+idhvb2QA8lDZ9Pa0wZRfzTU="
-  "resolved" "https://registry.npmjs.org/netmask/-/netmask-1.0.6.tgz"
-  "version" "1.0.6"
+"netmask@^2.0.1":
+  "integrity" "sha512-dBpDMdxv9Irdq66304OLfEmQ9tbNRFnFTuZiLo+bD+r332bBmMJ8GBLXklIXXgxd3+v9+KUnZaUR5PJMa75Gsg=="
+  "resolved" "https://registry.npmjs.org/netmask/-/netmask-2.0.2.tgz"
+  "version" "2.0.2"
 
 "next-tick@^1.1.0":
   "integrity" "sha512-CXdUiJembsNjuToQvxayPZF9Vqht7hewsvy2sOWafLvi2awflj9mOC6bHIg50orX8IJvWKY9wYQ/zB2kogPslQ=="
@@ -10455,13 +10455,13 @@
     "socks-proxy-agent" "5"
 
 "pac-resolver@^4.1.0":
-  "integrity" "sha512-d6lf2IrZJJ7ooVHr7BfwSjRO1yKSJMaiiWYSHcrxSIUtZrCa4KKGwcztdkZ/E9LFleJfjoi1yl+XLR7AX24nbQ=="
-  "resolved" "https://registry.npmjs.org/pac-resolver/-/pac-resolver-4.1.0.tgz"
-  "version" "4.1.0"
+  "integrity" "sha512-rPACZdUyuxT5Io/gFKUeeZFfE5T7ve7cAkE5TUZRRfuKP0u5Hocwe48X7ZEm6mYB+bTB0Qf+xlVlA/RM/i6RCQ=="
+  "resolved" "https://registry.npmjs.org/pac-resolver/-/pac-resolver-4.2.0.tgz"
+  "version" "4.2.0"
   dependencies:
     "degenerator" "^2.2.0"
     "ip" "^1.1.5"
-    "netmask" "^1.0.6"
+    "netmask" "^2.0.1"
 
 "package-json@^6.3.0":
   "integrity" "sha512-k3bdm2n25tkyxcjSKzB5x8kfVxlMdgsbPr0GkZcwHsLpba6cBjqCt1KlcChKEvxHIcTB1FVMuwoijZ26xex5MQ=="
@@ -11821,7 +11821,7 @@
     "strip-ansi" "6.0.0"
     "text-table" "0.2.0"
 
-"react-dom@*", "react-dom@^16.8.0 || ^17.0.0", "react-dom@^17.0.2", "react-dom@>= 16.8.0", "react-dom@>=16.6.0":
+"react-dom@*", "react-dom@^0.14 || ^15.0.0-0 || ^16.0.0-0 || ^17.0.0-0", "react-dom@^16.8.0 || ^17.0.0", "react-dom@^17.0.2", "react-dom@>= 16.8.0", "react-dom@>=16.6.0":
   "integrity" "sha512-s4h96KtLDUQlsENhMn1ar8t2bEa+q/YAtj8pPPdIjPDGBDIVNsrD9aXNWqspUe6AzKCIG0C1HZZLqLV7qpOBGA=="
   "resolved" "https://registry.npmjs.org/react-dom/-/react-dom-17.0.2.tgz"
   "version" "17.0.2"
@@ -11844,6 +11844,13 @@
   "integrity" "sha512-NAnt2iGDXohE5LI7uBnLnqvLQMtzhkiAOLXTmv+qnF9Ky7xAPcX8Up/xWIhxvLVGJvuLiNc4xQLtuqDRzb4fSA=="
   "resolved" "https://registry.npmjs.org/react-is/-/react-is-17.0.1.tgz"
   "version" "17.0.1"
+
+"react-number-format@^4.5.3":
+  "integrity" "sha512-y7+2HtVjQI82Pome1Xxdf8RODZ6vAGwBnao4Iohl8/zhzWpkuLzvquXHXzXuHT6Xija4QddFAGitUbW3dN4sNg=="
+  "resolved" "https://registry.npmjs.org/react-number-format/-/react-number-format-4.5.3.tgz"
+  "version" "4.5.3"
+  dependencies:
+    "prop-types" "^15.7.2"
 
 "react-refresh@^0.8.3", "react-refresh@>=0.8.3 <0.10.0":
   "integrity" "sha512-X8jZHc7nCMjaCqoU+V2I0cOhNW+QMBwSUkeXnTi8IPe6zaRWfn60ZzvFDZqWPfmSJfjub7dDW1SP0jaHWLu/hg=="
@@ -11955,7 +11962,7 @@
     "loose-envify" "^1.4.0"
     "prop-types" "^15.6.2"
 
-"react@*", "react@^0.14.0 || ^15.0.0 || ^16.0.0 || ^17.0.0", "react@^16.8.0 || ^17.0.0", "react@^17.0.2", "react@>= 16", "react@>= 16.8.0", "react@>=15", "react@>=16.6.0", "react@17.0.2":
+"react@*", "react@^0.14 || ^15.0.0-0 || ^16.0.0-0 || ^17.0.0-0", "react@^0.14.0 || ^15.0.0 || ^16.0.0 || ^17.0.0", "react@^16.8.0 || ^17.0.0", "react@^17.0.2", "react@>= 16", "react@>= 16.8.0", "react@>=15", "react@>=16.6.0", "react@17.0.2":
   "integrity" "sha512-gnhPt75i/dq/z3/6q/0asP78D0u592D5L1pd7M8P+dck6Fu/jJeL6iVVK23fptSUZj8Vjf++7wXA8UNclGQcbA=="
   "resolved" "https://registry.npmjs.org/react/-/react-17.0.2.tgz"
   "version" "17.0.2"

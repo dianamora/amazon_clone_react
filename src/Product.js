@@ -1,26 +1,61 @@
 import React from 'react'
 import styled from 'styled-components'
+import { db } from './firebase'
 
-function Product() {
+function Product({ title, price, rating, image, id }) {
+
+    const addToCart = () => {
+        console.log(id);
+        const cartItem = db.collection("cartItems").doc(id);
+        cartItem.get()
+        .then((doc)=>{
+            console.log(doc);
+            if(doc.exists){
+                cartItem.update({
+                    quantity: doc.data().quantity + 1
+                })
+            } else {
+                db.collection("cartItems").doc(id).set({
+                    name: title,
+                    image: image,
+                    price: price,
+                    quantity: 1
+                })
+            }
+        })
+    }
+
     return (
         <Container>
             
             <Title>
-                CLX Set Gaming PC
+                { title }
             </Title>
             <Price>
-                $2193
+                ${ price }
             </Price>
             <Rating>
-                ⭐⭐⭐⭐⭐
+                {
+                    Array(rating)
+                    .fill()
+                    .map(rating=> <p>⭐</p>)
+                }
             </Rating>
-            <Image src='https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcR9aksUOSekZbUw8Y1rWRsidLRqMK3dSS7Q7HVo8boFBQOFgCBQ8Tklv9dmNq5l58u6PK_d7DXIHuo&usqp=CAc' />
+
+            <Image src={image} />
+            
             <ActionSection>
-                <AddToCartButton>
+                <AddToCartButton
+                    onClick={addToCart}
+                >
                     Add to Cart
                 </AddToCartButton>
             </ActionSection>
+
+            
         </Container>
+
+        
     )
 }
 
@@ -41,7 +76,11 @@ const Price = styled.span`
     font-weight: 500;
     margin-top: 3px;
 `
-const Rating = styled.div``
+const Rating = styled.div`
+    display: flex;
+`
+
+
 const Image = styled.img`
     max-height: 200px;
     object-fit: contain;
@@ -59,4 +98,5 @@ const AddToCartButton = styled.button`
     background-color: #f0c14b;
     border: 2px solid #a88734;
     border-radius: 2px;
+    cursor: pointer;
 `
